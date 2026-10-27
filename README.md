@@ -1,4 +1,4 @@
-<img width="1847" height="1010" alt="Screenshot 2026-10-27 at 3 52 38 PM" src="https://github.com/user-attachments/assets/6cf3e71a-0dc2-49e2-8349-aca0d5bb6b3b" /># Stria — Football shirts
+# Stria — Football shirts
 
 A catalog shop for football shirts, built with Next.js, TypeScript, Tailwind CSS, and Stripe.
 
