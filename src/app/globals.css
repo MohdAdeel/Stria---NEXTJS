@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf8f3;
+  --foreground: #14261c;
+  --ink: #14261c;
+  --pitch: #173028;
+  --clay: #c4371f;
+  --clay-deep: #9a2b16;
+  --cream: #f3eee4;
+  --paper: #fbf8f3;
+  --sand: #e6ddd0;
+  --moss: #2c6a4e;
+  --muted: #4a5c53;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-pitch: var(--pitch);
+  --color-clay: var(--clay);
+  --color-clay-deep: var(--clay-deep);
+  --color-cream: var(--cream);
+  --color-paper: var(--paper);
+  --color-sand: var(--sand);
+  --color-moss: var(--moss);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: #c4371f;
+  color: #fbf8f3;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 42s linear infinite;
+}
+
+.stria-hatch {
+  background-image: repeating-linear-gradient(
+    -32deg,
+    transparent,
+    transparent 6px,
+    #c4371f 6px,
+    #c4371f 8px
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
